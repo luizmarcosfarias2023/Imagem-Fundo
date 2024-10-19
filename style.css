@@ -61,17 +61,20 @@ body{
     height: 300px;
 }
 .qrcodi{
-    padding-left:230px;
+    padding-left:190px;
 }
 
 div#q1{
     background-color: blue;
+    margin: 10px;
 }
 
 div#q2{
     background-image: linear-gradient(to bottom, yellow, red );
+    margin: 10px;
 }
 
 div#q3{
     background-image: url(./Imagens/pattern003.png);
+    margin: 10px;
 }

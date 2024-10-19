@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionando Imagens</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .div{
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        h1{
+            font-size: 2em;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        p{
+            margin-top: 10px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+        .imagem{
+            background-image: url(./Imagens/wallpaper003.jpg);
+            border: 2px solid black;
+            border-radius: 20px;
+            max-width: auto;
+            height: 200px;
+            margin: 10px;
+        }
+        div #im-1{
+            background-position: left top;
+
+        }
+        div #im-2{
+            background-position: left center;
+        }
+        div #im-3{
+            background-position: right bottom;
+        }  
+        div #im-4{
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background-position nas imagens</h1>
+    <p>Posicionando as imagens utilizando o elemento 
+        background-position.
+    </p>    
+    <div class="div">
+        <div class="imagem" id="im-1">
+            <img src="" alt="">
+        </div>
+        <div class="imagem" id="im-2">
+            <img src="" alt="">
+        </div>
+        <div class="imagem" id="im-3">
+            <img src="" alt="">
+        </div>
+        <div class="imagem" id="im-4">
+            <img src="" alt="">
+        </div>
+    </div>
+</body>
+</html>
