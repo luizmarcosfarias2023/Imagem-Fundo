@@ -9,6 +9,7 @@
     *{
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
     body{
         /*background-color: black;
@@ -19,6 +20,7 @@
         background-attachment: fixed;*/
         background: black url(./Imagens/barco.jpg) center center no-repeat fixed;
         background-size: cover;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     h1{
         text-align: center;
@@ -30,7 +32,7 @@
         text-decoration: underline;
     }
     main{
-        max-width: 400px;
+        max-width: 500px;
         margin: 30px auto;
         background-color: white;
         border: 1px solid black;
@@ -42,10 +44,33 @@
     p{
         margin: 15px;
     }
+    .header{
+        width: 100%;
+        /*position: -webkit-sticky;*/
+        position: sticky;
+        top:0;
+    }
+    .menu{
+        text-align:left;
+        position: relative;
+    }
+    .menu ul{
+        list-style: none;
+    }
+    .menu ul li{
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .menu ul li a{
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+    }
     nav{
         padding: 20px;
         background-color: rgba(255, 255, 255, 0.438);
     }
+
     nav a{
         color:white;
         font-family:'Courier New', Courier, monospace;
@@ -57,19 +82,31 @@
 
     nav a:hover{
         color: red;
-        transition: 2s;
+        transition: 0.3s;
     }
     /*Shorthand - background
     color > image > position > repeat > size > attachment
      */
 </style>
 <body>
-    <nav>
-        <a href="#">Ínicio</a>
-        <a href="#">Produtos</a>
-        <a href="#">Lojas</a>
-        <a href="#">Quem Somos</a>
-    </nav>
+    <header class="header">
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#">Ínicio</a>
+                </li>
+                <li>
+                    <a href="#">Produtos</a>
+                </li>
+                <li>
+                    <a href="#">Lojas</a>
+                </li>
+                <li>
+                    <a href="#">Quem Somos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <h1>Background-attachement e Shorthand</h1>
         <h3>Fundo Fixo de tela</h3>
