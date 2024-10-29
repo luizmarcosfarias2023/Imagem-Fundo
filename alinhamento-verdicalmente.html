@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #select{
+            background-image: url(./Imagens/wallpaper004.jpg);
+            background-size: 100% 100%;
+            position: relative;
+            height: 500px;
+            padding: 10px;
+        }
+        #article{
+            background-color: yellow;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            /*
+            left: 100px; Vem desde a borda até o ponto definido
+            top: 200px;*/
+
+            /*Pode estar utilizando também em porsentagem*/
+            left: 50%;
+            top:50%;
+
+            /*Esse elemento pode ser utilizando para posicionar a caixa tanto para esquerda ou para a direita.*/
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <!--Div's semanticas-->
+    <section id="select">
+        <article id="article">
+
+        </article>
+    </section>
+
+</body>
+</html>
