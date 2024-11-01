@@ -15,16 +15,20 @@
         font-family:Arial, Helvetica, sans-serif;
         background-image: url(./Imagens/barco.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
+        background-size: cover;/*Ajustar a imagem de acordo com o tamanho da tela*/
+        background-attachment: fixed; /*Fixar a imagem passando assim todos menu necessário */
     }
     .header{
         background: linear-gradient(to bottom right, rgba(9, 9, 121, 0.219) 35%, rgba(0, 213, 255, 0.479) 100%);
         padding: 10px;
         text-align: center;
         padding: 10px;
+        margin-bottom: 0px;
     }
     h1{
+        text-shadow: 2px 2px 5px black;
+        font-family: var(--fonte);
+        margin-top: 10px;
         color: white;
         font-size: 2.8em;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -37,12 +41,19 @@
     li{
         display: inline;
         margin: 15px;
-        font-size: 19px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
     }
     a{
         text-decoration: none;
         color: white;
+        margin-left: 30px;
+    }
+
+    a:hover{
+        color: red;
+        height: 15px;
+        transition: color 0.10s;
     }
 </style>
 <body>
@@ -61,7 +72,7 @@
                 <a href="#">Lojas</a>
             </li>
             <li>
-                <a href="#">Fale</a>
+                <a href="#">Fale Conosco</a>
             </li>
         </ul>
     </nav>
