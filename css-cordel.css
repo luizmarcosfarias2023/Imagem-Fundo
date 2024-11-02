@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    background-color: darkgray;
+    min-height: 100%vh;
+}
+/*Cabeçalho*/
+.header{
+    padding: 15px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header h1{
+    /*text-transform:uppercase; --> é para poder colocar todas as letras em Maiuscolas*/
+    /*text-transform:lowercaze; --> é para poder colocar todas as letras em nenusculas*/
+    font-variant: small-caps; /*Essa opção ela da uma variação para fonte, ou seja, todas continuam em maiuscola só que a única que relamente da um som mais gritante é sempre a primeira lentra.*/
+}
+.header > p {
+   padding-bottom: 15px;
+}
+
+.header > p > a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.header > p > a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+/*Menu de Navegação*/
+.nav{
+    position: fixed;
+    top:100px;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.384);
+    padding: 10px;
+}
+.navegacao li{
+    display: inline;
+}
+.navegacao a {
+    text-decoration: none;
+    margin: 15px;
+    color: blue;
+    font-size: 18px normal;
+}
+.navegacao a:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+/*Corpo da Pagina*/
+.text{
+    margin-top: -20px;
+    background-color: white;
+}
+section{
+    /*padding-top: 150px;
+    margin-left: 20px;*/
+    padding-left: 10px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;/*Este elemento é pra poder dar um espaçamento entre as frases.*/
+    
+}
+
+section .normal{
+    background-color: white;
+    color:black
+}
+section .imagem{
+    background-color: rgba(7, 6, 6, 0.815);
+    color: white;
+}
+
+section .imagem > p{
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 300px;
+}
+
+/*Rodape*/
+.rodape{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.rodape > p > a{
+    text-decoration: none;
+    font-weight: bold
+}
+
+.rodape > p > a:hover{
+    color:red
+}
+/*body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url(./Imagens/barco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;/*Ajustar a imagem de acordo com o tamanho da tela*/
+    /*background-attachment: fixed; /*Fixar a imagem passando assim todos menu necessário */
+/*}
+.header{
+    background: linear-gradient(to bottom right, rgba(9, 9, 121, 0.219) 35%, rgba(0, 213, 255, 0.479) 100%);
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+h1{
+    text-shadow: 2px 2px 5px black;
+    font-family: var(--fonte);
+    margin-top: 10px;
+    color: white;
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navegacao{
+    padding: 20px;
+    background: linear-gradient(to top right, rgba(9,9,121, 0.219) 35%, rgba(0,213,255, 0.479) 100%);
+}
+li{
+    display: inline;
+    margin: 15px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+
+a:hover{
+    transition: none;
+    color: red;
+    height: 15px;
+    transition: color 0.10s;
+}
+.section{
+    padding: auto;
+}
+
+p{
+    margin-top: 20px;
+    color: white;
+    font-size: 15px normal;
+
+}*/
+
+
+    
+
