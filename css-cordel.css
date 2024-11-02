@@ -33,6 +33,7 @@ html body{
 .header > p > a{
     text-decoration: none;
     font-weight: bold;
+    
 }
 .header > p > a:hover{
     text-decoration: none;
