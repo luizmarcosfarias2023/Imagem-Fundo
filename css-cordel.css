@@ -7,7 +7,7 @@
 }
 html body{
     background-color: darkgray;
-    min-height: 100%vh;
+    min-height: 100vh;
 }
 /*Cabeçalho*/
 .header{
@@ -33,6 +33,9 @@ html body{
 .header > p > a{
     text-decoration: none;
     font-weight: bold;
+    color: rgba(16, 16, 245, 0.918);
+    font-size: 1.1em;
+
     
 }
 .header > p > a:hover{
@@ -46,8 +49,8 @@ html body{
     top:100px;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.384);
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.205);
+    padding: 7px;
 }
 .navegacao li{
     display: inline;
@@ -55,41 +58,53 @@ html body{
 .navegacao a {
     text-decoration: none;
     margin: 15px;
-    color: blue;
-    font-size: 18px normal;
+    color: rgb(34, 9, 175);
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+    
 }
 .navegacao a:hover{
-    color: red;
+    color: white;
+    transform: scale(1.1);
+    background-color: black;
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
     transition: 0.3s;
+    
 }
 
 /*Corpo da Pagina*/
 .text{
-    margin-top: -20px;
+    margin-top: 100px;
     background-color: white;
 }
 section{
     /*padding-top: 150px;
     margin-left: 20px;*/
-    padding-left: 10px;
+    /*padding-left: 10px;
     padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-bottom: 10vh;*/
+    padding: 5vh 10px;
     line-height: 2em;/*Este elemento é pra poder dar um espaçamento entre as frases.*/
     
 }
 
 section .normal{
     background-color: white;
-    color:black
+    color:black;
 }
 section .imagem{
     background-color: rgba(7, 6, 6, 0.815);
     color: white;
+    padding: 10px;
 }
 
 section .imagem > p{
     background-color: rgba(0, 0, 0, 0.616);
-    width: 300px;
+    padding: 10px;
+    width: fit-content;
+    max-width: 100%;
 }
 
 /*Rodape*/
@@ -101,7 +116,9 @@ section .imagem > p{
 }
 .rodape > p > a{
     text-decoration: none;
-    font-weight: bold
+    font-weight: bold;
+    color: blue;
+    font-size: 1.1em;
 }
 
 .rodape > p > a:hover{
