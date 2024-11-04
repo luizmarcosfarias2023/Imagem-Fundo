@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3: 'Sriracha', cursive;
+}
 
 *{
     margin: 0;
@@ -8,6 +17,7 @@
 html body{
     background-color: darkgray;
     min-height: 100vh;
+    font-family:var(--fonte1)
 }
 /*Cabeçalho*/
 .header{
@@ -24,6 +34,8 @@ html body{
 .header h1{
     /*text-transform:uppercase; --> é para poder colocar todas as letras em Maiuscolas*/
     /*text-transform:lowercaze; --> é para poder colocar todas as letras em nenusculas*/
+    font-size: 10vh;
+    font-family:var(--fonte2);
     font-variant: small-caps; /*Essa opção ela da uma variação para fonte, ou seja, todas continuam em maiuscola só que a única que relamente da um som mais gritante é sempre a primeira lentra.*/
 }
 .header > p {
@@ -45,8 +57,10 @@ html body{
 
 /*Menu de Navegação*/
 .nav{
+    
+    font-size: 2.5vh;
     position: fixed;
-    top:100px;
+    top:130px;
     width: 100%;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.205);
@@ -76,7 +90,7 @@ html body{
 
 /*Corpo da Pagina*/
 .text{
-    margin-top: 100px;
+    margin-top: 130px;
     background-color: white;
 }
 section{
@@ -85,6 +99,8 @@ section{
     /*padding-left: 10px;
     padding-top: 10vh;
     padding-bottom: 10vh;*/
+    font-size: 3vh;
+    font-family: var(--fonte3);
     padding: 5vh 10px;
     line-height: 2em;/*Este elemento é pra poder dar um espaçamento entre as frases.*/
     
@@ -103,6 +119,7 @@ section .imagem{
 section .imagem > p{
     background-color: rgba(0, 0, 0, 0.616);
     padding: 10px;
+    display: inline-block;
     width: fit-content;
     max-width: 100%;
 }
