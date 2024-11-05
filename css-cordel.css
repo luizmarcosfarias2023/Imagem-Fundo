@@ -90,6 +90,8 @@ html body{
 
 /*Corpo da Pagina*/
 .text{
+    padding: 0;
+    padding-top: 25px;
     margin-top: 130px;
     background-color: white;
 }
@@ -110,6 +112,7 @@ section .normal{
     background-color: white;
     color:black;
 }
+
 section .imagem{
     background-color: rgba(7, 6, 6, 0.815);
     color: white;
@@ -117,11 +120,31 @@ section .imagem{
 }
 
 section .imagem > p{
-    background-color: rgba(0, 0, 0, 0.616);
+    background-color: rgba(0, 0, 0, 0.486);
     padding: 10px;
+    text-shadow: 2px 2px 3px black;
     display: inline-block;
     width: fit-content;
     max-width: 100%;
+}
+section#imagem1{
+    box-shadow:2px 2px 4px initial;
+    background-image: url(./Imagens/flor.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.658);
+}
+
+section#imagem2{
+    background-image: url(./Imagens/poema.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.658);
+}
+.text p{
+    padding-bottom: 1.5em;
 }
 
 /*Rodape*/
