@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas da forma correta</title>
 </head>
+<style>
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        color:cornsilk;
+    }
+    table{
+        width: 500px; /*Largura*/
+        height: 400px; /*Altura*/
+        border-collapse: collapse;
+        background-image: url(./Imagens/barco.jpg);
+        background-size: cover;
+
+    }
+    td{
+        border: 1px solid black;
+        padding: 9px;
+        text-align:center; /*Alinhamento horizontalmente*/
+        vertical-align:middle; /*É para alinhar o texto verticalmente dentro da celula*/
+    }
+     .tabela{
+        background-color: blue;
+        color: white;
+     }
+     .celula{
+        background-color: yellow;
+        font-size: 1.2em;
+        color: black;
+     }
+
+</style>
 <body>
     <h1>Trabalhando com tabelas</h1>
     <!-- Hierarquia de tambela (Simples)
@@ -19,21 +49,27 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr>
-            <tb>A2</tb>
-            <tb>B2</tb>
-            <tb>C2</tb>
+        <tr class="tabela">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
         </tr>
         <tr>
-            <tb>A3</tb>
-            <tb>B3</tb>
-            <tb>C3</tb>
+            <td>A3</td>
+            <td class="celula">B3</td>
+            <td>C3</td>
         </tr>
         <tr>
-            <tb>A4</tb>
-            <tb>B4</tb>
-            <tb>C4</tb>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
         </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+            <td>C5</td>
+        </tr>
+      
     </table>
 </body>
 </html>
