@@ -29,7 +29,7 @@
             font-size: 1em;
         }
         .numero{
-            text-align: right;
+            text-align: center;
         }
         .nun{
             text-align: center;
@@ -41,6 +41,13 @@
         
         td, th{
             border: 1px solid black;
+        }
+        caption{
+            padding: 10px;
+            font-size: 1.5em;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: darkgrey;
+
         }
     </style>
 </head>
@@ -59,12 +66,13 @@
 <body>
     <h1>Tabela do IBGE</h1>
     <table>
+        <caption>População das únidades Federativas</caption>
         <thead>
             <tr class="titulo">
-                <th>Posição</th>
-                <th>Unidade Federativa</th>
-                <th>População (Estimativa)</th>
-                <th>População (Censo)</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col" style="width: 80px;">População (Estimativa)</th>
+                <th scope="col" style="width: 80px;">População (Censo)</th>
             </tr>
         </thead>
         <tbody>
@@ -131,7 +139,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de abitantes</th>
+                <th scope="col">Total de abitantes</th>
                 <td class="mes">212 583 720</td>
             </tr>
         </tfoot>
