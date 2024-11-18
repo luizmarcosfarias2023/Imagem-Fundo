@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Imagens/image.jfif" type="image/x-icon">
+    <title>Tabela Zebrada</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(./Imagens/barco.jpg);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: rgb(15, 15, 15);
+        }
+        h1{
+            color:white;
+            font-size: 2.9em;
+            text-shadow: 3px 3px 5px black;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .num, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 800px;
+            height: 40px;
+            margin: auto;
+        }
+        .numero{
+            width: 30px;
+            text-align: center;
+        }
+       
+        .td{
+            text-align:right;
+            padding: 10px;
+        }
+        .color{
+            background-color: dimgray;
+        }
+        tr:nth-child(2n){
+            background-color:rgb(113, 121, 121);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela Zebrada</h1>
+    <table class="num">
+        <th scope="col">Posição</th>
+        <th scope="col">Unidade Federativa</th>
+        <th scope="col">População (Estimativa)</th>
+        <th scope="col">População (Censo)</th>
+        <tr>
+            <td class="numero">1</td>
+            <td>Minas Gerais</td>
+            <td class="td">45 973 190</td>
+            <td class="td">44 411 238</td>
+        </tr>
+        <tr>
+            <td class="numero">2</td>
+            <td>São Paulo</td>
+            <td class="td">45 973 190</td>
+            <td class="td">44 411 238</td>
+        </tr>
+        <tr>
+            <td class="numero">3</td>
+            <td>Rio de Janeiro</td>
+            <td class="td">17 219 679</td>
+            <td class="td">16 054 524</td>
+        </tr>
+        <tr>
+            <td class="numero">4</td>
+            <td>Bahia</td>
+            <td class="td">14 850 513</td>
+            <td class="td">14 141 626</td>
+        </tr>
+        <tr>
+            <td class="numero">5</td>
+            <td>foz do Iguaçu</td>
+            <td class="td">15 856 516</td>
+            <td class="td">18 165 657</td>
+        </tr>
+        <tr>
+            <td class="numero">6</td>
+            <td>Goiânia</td>
+            <td class="td">223 850 513</td>
+            <td class="td">778 141 626</td>
+        </tr>
+        <tr>
+            <td class="numero">7</td>
+            <td>Jaragua</td>
+            <td class="td">879 850 513</td>
+            <td class="td">990 141 626</td>
+        </tr>
+        <tr>
+            <td class="numero">8</td>
+            <td>Niequelandia</td>
+            <td class="td">17 870 513</td>
+            <td class="td">19 161 626</td>
+        </tr>
+        <tfoot>
+            <tr class="color">
+                <th>Total de Pessoas</th>
+                <td class="td">245 445 988</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
